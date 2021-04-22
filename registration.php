@@ -1,0 +1,12 @@
+<?php
+/**
+ * Magenizr Envbar
+ *
+ * @category    Magenizr
+ * @copyright   Copyright (c) 2021 Magenizr (https://www.magenizr.com)
+ * @license     https://www.magenizr.com/license Magenizr EULA
+ */
+
+use Magento\Framework\Component\ComponentRegistrar;
+
+ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Magenizr_Envbar', isset($file) ? realpath(dirname($file)) : __DIR__); // phpcs:ignore

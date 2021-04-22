@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+/**
+ * Magenizr Envbar
+ *
+ * @category    Magenizr
+ * @copyright   Copyright (c) 2021 Magenizr (https://www.magenizr.com)
+ * @license     https://www.magenizr.com/license Magenizr EULA
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="magenizr" translate="label" sortOrder="10000">
+            <label>Magenizr</label>
+        </tab>
+        <section id="magenizr_envbar" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <label>Envbar</label>
+            <tab>magenizr</tab>
+            <resource>Magenizr_Envbar::magenizr</resource>
+
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>General</label>
+
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Disable the module temporarily. Default: No]]></comment>
+                </field>
+
+                <field id="environments" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1"
+                       showInStore="0">
+                    <label>Environments</label>
+                    <frontend_model>Magenizr\Envbar\Block\Adminhtml\System\Config\Environments\Table</frontend_model>
+                    <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                    <comment><![CDATA[<ul style="list-style-type: none;">
+                    <li><strong>Name:</strong> The name of your environment ( e.g Development, Staging, Production )</li>
+                    <li><strong>URL:</strong> The url of your project, such as <i>*.myproject.build</i> or <i>https://myproject.local</i></li>
+                    <li><strong>Style:</strong> Choose a pre-defined background.</li>
+                    </ul>]]></comment>
+                </field>
+            </group>
+
+        </section>
+    </system>
+</config>

@@ -1,0 +1,43 @@
+.magenizr-envbar:not(.adminhtml-auth-login) {
+
+    .menu-wrapper {
+
+        top: 20px !important;
+    }
+
+    &.env-development {
+
+        .menu-wrapper {
+            &:before {
+                border-top: 20px solid #28b41c;
+            }
+        }
+    }
+
+    &.env-staging {
+
+        .menu-wrapper {
+            &:before {
+                border-top: 20px solid #d9b227;
+            }
+        }
+    }
+
+    &.env-production {
+
+        .menu-wrapper {
+            &:before {
+                border-top: 20px solid #e30c0c;
+            }
+        }
+    }
+
+    &.env-custom {
+
+        .menu-wrapper {
+            &:before {
+                border-top: 20px solid #f5c6cb;
+            }
+        }
+    }
+}

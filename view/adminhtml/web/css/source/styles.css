@@ -1,0 +1,19 @@
+.magenizr-envbar:not(.adminhtml-auth-login) .menu-wrapper {
+    top: 20px !important;
+}
+
+.magenizr-envbar:not(.adminhtml-auth-login).env-development .menu-wrapper:before {
+    border-top: 20px solid #28b41c;
+}
+
+.magenizr-envbar:not(.adminhtml-auth-login).env-staging .menu-wrapper:before {
+    border-top: 20px solid #d9b227;
+}
+
+.magenizr-envbar:not(.adminhtml-auth-login).env-production .menu-wrapper:before {
+    border-top: 20px solid #e30c0c;
+}
+
+.magenizr-envbar:not(.adminhtml-auth-login).env-custom .menu-wrapper:before {
+    border-top: 20px solid #f5c6cb;
+}
