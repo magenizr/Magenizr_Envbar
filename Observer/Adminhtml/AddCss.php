@@ -1,8 +1,9 @@
 <?php
+declare(strict_types=1);
+
 /**
  * Magenizr Envbar
  *
- * @category    Magenizr
  * @copyright   Copyright (c) 2021 Magenizr (https://www.magenizr.com)
  * @license     https://www.magenizr.com/license Magenizr EULA
  */
@@ -39,7 +40,6 @@ class AddCss implements ObserverInterface
         $env = $this->dataHelper->getEnvironment();
 
         if (isset($env['style'])) {
-
             $this->pageConfig->addBodyClass('magenizr-envbar');
             $this->pageConfig->addBodyClass('env-'.$env['style']);
         }

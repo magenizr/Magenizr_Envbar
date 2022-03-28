@@ -2,7 +2,6 @@
 /**
  * Magenizr Envbar
  *
- * @category    Magenizr
  * @copyright   Copyright (c) 2021 Magenizr (https://www.magenizr.com)
  * @license     https://www.magenizr.com/license Magenizr EULA
  */

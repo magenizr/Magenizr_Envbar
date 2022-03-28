@@ -1,8 +1,9 @@
 <?php
+declare(strict_types=1);
+
 /**
  * Magenizr Envbar
  *
- * @category    Magenizr
  * @copyright   Copyright (c) 2021 Magenizr (https://www.magenizr.com)
  * @license     https://www.magenizr.com/license Magenizr EULA
  */
@@ -76,9 +77,7 @@ class Data extends AbstractHelper
         $environments = $this->serializer->unserialize($this->getConfig('general/environments'));
 
         if (is_array($environments)) {
-
             foreach ($environments as $env) {
-
                 $match = $this->findMatchInUrl($current, $env['url']);
 
                 if (is_bool($match)) {
@@ -111,9 +110,7 @@ class Data extends AbstractHelper
     private function findMatchInUrl($current, $urls)
     {
         if (! empty($urls)) {
-
             foreach (explode(',', $urls) as $url) {
-
                 if (stripos($url, '*') !== false) {
                     return strstr($current, str_replace('*', '', $url));
                 }

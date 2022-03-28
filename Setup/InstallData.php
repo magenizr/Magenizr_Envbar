@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace Magenizr\Envbar\Setup;
 
@@ -35,7 +36,6 @@ class InstallData implements InstallDataInterface
     }
 
     /**
-     * {@inheritdoc}
      * @SuppressWarnings(PHPMD.ExcessiveMethodLength)
      */
     public function install(ModuleDataSetupInterface $setup, ModuleContextInterface $context)

@@ -1,8 +1,9 @@
 <?php
+declare(strict_types=1);
+
 /**
  * Magenizr Envbar
  *
- * @category    Magenizr
  * @copyright   Copyright (c) 2021 Magenizr (https://www.magenizr.com)
  * @license     https://www.magenizr.com/license Magenizr EULA
  */
@@ -54,7 +55,6 @@ class Style extends Select
     public function _toHtml()
     {
         if (! $this->getOptions()) {
-
             $attributes = $this->dataHelper->getStyles();
 
             foreach ($attributes as $attribute) {
