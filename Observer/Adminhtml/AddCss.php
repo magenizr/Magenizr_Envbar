@@ -31,6 +31,12 @@ class AddCss implements ObserverInterface
         $this->pageConfig = $pageConfig;
     }
 
+    /**
+     * Execute controller.
+     *
+     * @param Observer $observer
+     * @return void
+     */
     public function execute(Observer $observer)
     {
         if (! $this->dataHelper->isEnabled()) {

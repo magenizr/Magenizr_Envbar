@@ -57,7 +57,7 @@ class Data extends AbstractHelper
     /**
      * Get module flags from core_config_data
      *
-     * @param $setting
+     * @param string $setting
      * @return mixed
      */
     public function getConfigFlag($setting)
@@ -80,7 +80,7 @@ class Data extends AbstractHelper
             foreach ($environments as $env) {
                 $match = $this->findMatchInUrl($current, $env['url']);
 
-                if (is_bool($match)) {
+                if (empty($match) || is_bool($match)) {
                     continue;
                 }
 
@@ -92,7 +92,7 @@ class Data extends AbstractHelper
     /**
      * Get module configuration values from core_config_data
      *
-     * @param $setting
+     * @param string $setting
      * @return mixed
      */
     public function getConfig($setting)
@@ -103,19 +103,23 @@ class Data extends AbstractHelper
     /**
      * Find URL match.
      *
-     * @param $current
-     * @param $urls
+     * @param string $current
+     * @param string $urls
      * @return false|int|string
      */
     private function findMatchInUrl($current, $urls)
     {
+        $current = parse_url($current);
+        $host = $current['host'];
+
         if (! empty($urls)) {
             foreach (explode(',', $urls) as $url) {
-                if (stripos($url, '*') !== false) {
-                    return strstr($current, str_replace('*', '', $url));
+
+                if (strpos($host, str_replace('*', '', $url)) === false) {
+                    continue;
                 }
 
-                return strpos($url, $current);
+                return strstr($host, str_replace('*', '', $url));
             }
         }
     }

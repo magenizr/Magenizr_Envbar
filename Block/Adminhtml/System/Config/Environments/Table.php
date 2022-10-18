@@ -21,6 +21,8 @@ class Table extends AbstractFieldArray
     protected $typeRenderer;
 
     /**
+     * Prepare renderer
+     *
      * @throws \Magento\Framework\Exception\LocalizedException
      */
     protected function _prepareToRender()
@@ -37,6 +39,8 @@ class Table extends AbstractFieldArray
     }
 
     /**
+     * Return defined styles
+     *
      * @return \Magenizr\Envbar\Block\Adminhtml\Form\Field\Style|\Magento\Framework\View\Element\BlockInterface
      * @throws \Magento\Framework\Exception\LocalizedException
      */
@@ -50,6 +54,8 @@ class Table extends AbstractFieldArray
     }
 
     /**
+     * Prepare array row
+     *
      * @param \Magento\Framework\DataObject $row
      * @throws \Magento\Framework\Exception\LocalizedException
      */

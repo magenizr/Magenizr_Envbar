@@ -39,6 +39,8 @@ class Style extends Select
     }
 
     /**
+     * Set name
+     *
      * @param string $value
      * @return Magently\Tutorial\Block\Adminhtml\Form\Field\Activation
      */
