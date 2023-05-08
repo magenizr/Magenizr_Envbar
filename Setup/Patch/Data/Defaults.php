@@ -4,7 +4,7 @@ declare(strict_types=1);
 /**
  * Magenizr Envbar
  *
- * @copyright   Copyright (c) 2021 Magenizr (https://www.magenizr.com)
+ * @copyright   Copyright (c) 2021 - 2023 Magenizr (https://www.magenizr.com)
  * @license     https://www.magenizr.com/license Magenizr EULA
  */
 
@@ -20,7 +20,7 @@ use Magento\Framework\App\Config\ScopeConfigInterface;
 
 class Defaults implements DataPatchInterface
 {
-    protected const XML_PATH_ENV = 'magenizr_envbar/general/environments';
+    const XML_PATH_ENV = 'magenizr_envbar/general/environments';
 
     /**
      * @var ModuleDataSetupInterface
