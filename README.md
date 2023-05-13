@@ -1,3 +1,6 @@
+[![Magenizr Plus](https://images2.imgbox.com/11/6b/yVOOloaA_o.gif)](https://account.magenizr.com)
+---
+
 # Envbar
 
 Envbar allows you to differentiate between environments by adding a custom colored bar above the top navigation. This
@@ -47,7 +50,6 @@ php bin/magento setup:upgrade
 
 ```
 php bin/magento module:enable Magenizr_Envbar --clear-static-content
-php bin/magento setup:upgrade
 ```
 
 ## Features
