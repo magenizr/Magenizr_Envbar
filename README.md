@@ -1,6 +1,8 @@
 [![Magenizr Plus](https://images2.imgbox.com/11/6b/yVOOloaA_o.gif)](https://account.magenizr.com)
 ---
 
+[![Latest Stable Version](http://poser.pugx.org/magenizr/magento2-envbar/v)](https://packagist.org/packages/magenizr/magento2-envbar) [![Total Downloads](http://poser.pugx.org/magenizr/magento2-envbar/downloads)](https://packagist.org/packages/magenizr/magento2-envbar) [![Latest Unstable Version](http://poser.pugx.org/magenizr/magento2-envbar/v/unstable)](https://packagist.org/packages/magenizr/magento2-envbar) [![License](http://poser.pugx.org/magenizr/magento2-envbar/license)](https://packagist.org/packages/magenizr/magento2-envbar) [![PHP Version Require](http://poser.pugx.org/magenizr/magento2-envbar/require/php)](https://packagist.org/packages/magenizr/magento2-envbar)
+
 # Envbar
 
 Envbar allows you to differentiate between environments by adding a custom colored bar above the top navigation. This
