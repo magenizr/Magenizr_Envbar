@@ -15,7 +15,7 @@ anyone from accidentally changing content on the wrong environment.
 ## System Requirements
 
 - Magento 2.3.x, 2.4.x
-- PHP 5.6.x, 7.x
+- PHP 7.x, 8.1
 
 ## Installation (Composer 2)
 
@@ -68,10 +68,6 @@ Simply go to `Stores > Configuration > Magenizr > Envbar` and enable the module 
 ## Support
 
 If you experience any issues, don't hesitate to open an issue on [Github](https://github.com/magenizr/Magenizr_Envbar/issues).
-
-## Purchase
-
-This module is available for free on [GitHub](https://github.com/magenizr).
 
 ## Contact
 
