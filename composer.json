@@ -1,7 +1,7 @@
 {
     "name": "magenizr/magento2-envbar",
     "type": "magento2-module",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "license": "OSL-3.0",
     "description": "Envbar allows you to differentiate between environments by adding a custom colored bar above the top navigation. This should help backend users to identify the environment ( e.g local, develop, staging, production ) and prevent anyone from accidentally changing content on the wrong environment.",
     "keywords": [
