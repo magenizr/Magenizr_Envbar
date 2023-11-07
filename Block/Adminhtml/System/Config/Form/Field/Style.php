@@ -4,8 +4,8 @@ declare(strict_types=1);
 /**
  * Magenizr Envbar
  *
- * @copyright   Copyright (c) 2021 - 2023 Magenizr (https://www.magenizr.com)
- * @license     https://www.magenizr.com/license Magenizr EULA
+ * @copyright 2023 Magenizr (https://www.magenizr.com)
+ * @license   https://www.magenizr.com/license Magenizr EULA
  */
 
 namespace Magenizr\Envbar\Block\Adminhtml\System\Config\Form\Field;
@@ -17,15 +17,15 @@ use Magento\Framework\View\Element\Html\Select;
 class Style extends Select
 {
     /**
-     * @var \Magenizr\Envbar\Helper\Data
+     * @var Data
      */
     protected $dataHelper;
 
     /**
-     * Style constructor.
+     * Init style constructor
      *
-     * @param \Magento\Framework\View\Element\Context $context
-     * @param \Magenizr\Envbar\Helper\Data $dataHelper
+     * @param Context $context
+     * @param Data $dataHelper
      * @param array $data
      */
     public function __construct(
@@ -41,7 +41,7 @@ class Style extends Select
     /**
      * Set name
      *
-     * @param string $value
+     * @param  string $value
      * @return Magently\Tutorial\Block\Adminhtml\Form\Field\Activation
      */
     public function setInputName($value)

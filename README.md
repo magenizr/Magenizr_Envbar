@@ -15,7 +15,7 @@ anyone from accidentally changing content on the wrong environment.
 ## System Requirements
 
 - Magento 2.3.x, 2.4.x
-- PHP 7.x, 8.1
+- PHP 5.6.x, 7.x
 
 ## Installation (Composer 2)
 
@@ -25,7 +25,7 @@ anyone from accidentally changing content on the wrong environment.
 ```
 Updating dependencies
 Lock file operations: 1 install, 1 update, 0 removals
-  - Locking magenizr/magento2-envbar (1.0.3)
+  - Locking magenizr/magento2-envbar (1.0.5)
 ```
 
 3. And then `composer install` to install the package.
@@ -34,7 +34,7 @@ Lock file operations: 1 install, 1 update, 0 removals
 Installing dependencies from lock file (including require-dev)
 Verifying lock file contents can be installed on current platform.
 Package operations: 1 install, 0 update, 0 removals
-  - Installing magenizr/magento2-envbar (1.0.3): Extracting archive
+  - Installing magenizr/magento2-envbar (1.0.5): Extracting archive
 ```
 
 4. Enable the module and clear static content.
@@ -47,7 +47,7 @@ php bin/magento setup:upgrade
 ## Installation (Manually)
 
 1. Download the code.
-2. Extract the downloaded tar.gz file. Example: `tar -xzf Magenizr_Envbar_1.0.4.tar.gz`.
+2. Extract the downloaded tar.gz file. Example: `tar -xzf Magenizr_Envbar_1.0.5.tar.gz`.
 3. Copy the code into `./app/code/Magenizr/Envbar/`.
 4. Enable the module and clear static content.
 
@@ -69,12 +69,20 @@ Simply go to `Stores > Configuration > Magenizr > Envbar` and enable the module 
 
 If you experience any issues, don't hesitate to open an issue on [Github](https://github.com/magenizr/Magenizr_Envbar/issues).
 
+## Purchase
+
+This module is available for free on [GitHub](https://github.com/magenizr).
+
 ## Contact
 
 Follow us on [GitHub](https://github.com/magenizr), [Twitter](https://twitter.com/magenizr)
 and [Facebook](https://www.facebook.com/magenizr).
 
 ## History
+===== 1.0.5 =====
+* 2.4.6-p3 and PHP8 compatibility test
+* Minor fixes applied
+
 ===== 1.0.4 =====
 * Increased width for dynamic row table in system.xml
 

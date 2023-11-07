@@ -4,8 +4,8 @@ declare(strict_types=1);
 /**
  * Magenizr Envbar
  *
- * @copyright   Copyright (c) 2021 - 2023 Magenizr (https://www.magenizr.com)
- * @license     https://www.magenizr.com/license Magenizr EULA
+ * @copyright 2021 - 2023 Magenizr (https://www.magenizr.com)
+ * @license   https://www.magenizr.com/license Magenizr EULA
  */
 
 namespace Magenizr\Envbar\Observer\Adminhtml;
@@ -18,10 +18,20 @@ use Magento\Framework\View\Page\Config;
 class AddCss implements ObserverInterface
 {
     /**
-     * AddCss constructor.
+     * @var Data
+     */
+    protected $dataHelper;
+
+    /**
+     * @var Config
+     */
+    protected $pageConfig;
+
+    /**
+     * Init AddCss constructor
      *
-     * @param \Magenizr\Envbar\Helper\Data $dataHelper
-     * @param \Magento\Framework\View\Page\Config $pageConfig
+     * @param Data   $dataHelper
+     * @param Config $pageConfig
      */
     public function __construct(
         Data $dataHelper,
@@ -34,7 +44,7 @@ class AddCss implements ObserverInterface
     /**
      * Execute controller.
      *
-     * @param Observer $observer
+     * @param  Observer $observer
      * @return void
      */
     public function execute(Observer $observer)

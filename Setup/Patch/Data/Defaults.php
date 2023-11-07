@@ -4,8 +4,8 @@ declare(strict_types=1);
 /**
  * Magenizr Envbar
  *
- * @copyright   Copyright (c) 2021 - 2023 Magenizr (https://www.magenizr.com)
- * @license     https://www.magenizr.com/license Magenizr EULA
+ * @copyright 2023 Magenizr (https://www.magenizr.com)
+ * @license   https://www.magenizr.com/license Magenizr EULA
  */
 
 namespace Magenizr\Envbar\Setup\Patch\Data;
@@ -46,9 +46,9 @@ class Defaults implements DataPatchInterface
      * Defaults constructor.
      *
      * @param ModuleDataSetupInterface $moduleDataSetup
-     * @param EavSetupFactory $eavSetupFactory
-     * @param Factory $configFactory
-     * @param WriterInterface $configWriter
+     * @param EavSetupFactory          $eavSetupFactory
+     * @param Factory                  $configFactory
+     * @param WriterInterface          $configWriter
      */
     public function __construct(
         ModuleDataSetupInterface $moduleDataSetup,

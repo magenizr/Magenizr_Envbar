@@ -4,8 +4,8 @@ declare(strict_types=1);
 /**
  * Magenizr Envbar
  *
- * @copyright   Copyright (c) 2021 - 2023 Magenizr (https://www.magenizr.com)
- * @license     https://www.magenizr.com/license Magenizr EULA
+ * @copyright 2023 Magenizr (https://www.magenizr.com)
+ * @license   https://www.magenizr.com/license Magenizr EULA
  */
 
 namespace Magenizr\Envbar\Block\Adminhtml\System\Config\Environments;
@@ -29,10 +29,12 @@ class Table extends AbstractFieldArray
     {
         $this->addColumn('name', ['label' => __('Name'), 'class' => 'required-entry']);
         $this->addColumn('url', ['label' => __('URL'), 'class' => 'required-entry']);
-        $this->addColumn('style', [
+        $this->addColumn(
+            'style', [
             'label' => __('Style'),
             'renderer' => $this->getStyle(),
-        ]);
+            ]
+        );
 
         $this->_addAfter = false;
         $this->_addButtonLabel = __('Add Environment');
@@ -56,7 +58,7 @@ class Table extends AbstractFieldArray
     /**
      * Prepare array row
      *
-     * @param \Magento\Framework\DataObject $row
+     * @param  \Magento\Framework\DataObject $row
      * @throws \Magento\Framework\Exception\LocalizedException
      */
     protected function _prepareArrayRow(DataObject $row)

@@ -4,8 +4,8 @@ declare(strict_types=1);
 /**
  * Magenizr Envbar
  *
- * @copyright   Copyright (c) 2021 - 2023 Magenizr (https://www.magenizr.com)
- * @license     https://www.magenizr.com/license Magenizr EULA
+ * @copyright 2023 Magenizr (https://www.magenizr.com)
+ * @license   https://www.magenizr.com/license Magenizr EULA
  */
 
 namespace Magenizr\Envbar\Helper;
@@ -25,12 +25,32 @@ class Data extends AbstractHelper
     private $tab = 'magenizr_envbar';
 
     /**
-     * Data constructor.
+     * @var RequestInterface
+     */
+    protected $request;
+
+    /**
+     * @var UrlInterface
+     */
+    protected $urlInterface;
+
+    /**
+     * @var SerializerInterface
+     */
+    protected $serializer;
+
+    /**
+     * @var ScopeConfigInterface
+     */
+    protected $scopeConfig;
+
+    /**
+     * Init data constructor
      *
-     * @param \Magento\Framework\App\RequestInterface $request
-     * @param \Magento\Framework\UrlInterface $urlInterface
-     * @param \Magento\Framework\Serialize\SerializerInterface $serializer
-     * @param \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig
+     * @param RequestInterface $request
+     * @param UrlInterface $urlInterface
+     * @param SerializerInterface $serializer
+     * @param ScopeConfigInterface $scopeConfig
      */
     public function __construct(
         RequestInterface $request,
@@ -57,7 +77,7 @@ class Data extends AbstractHelper
     /**
      * Get module flags from core_config_data
      *
-     * @param string $setting
+     * @param  string $setting
      * @return mixed
      */
     public function getConfigFlag($setting)
@@ -92,7 +112,7 @@ class Data extends AbstractHelper
     /**
      * Get module configuration values from core_config_data
      *
-     * @param string $setting
+     * @param  string $setting
      * @return mixed
      */
     public function getConfig($setting)
@@ -103,11 +123,11 @@ class Data extends AbstractHelper
     /**
      * Find URL match.
      *
-     * @param string $current
-     * @param string $urls
+     * @param  string $current
+     * @param  string $urls
      * @return false|int|string
      */
-    private function findMatchInUrl($current, $urls)
+    protected function findMatchInUrl($current, $urls)
     {
         $current = parse_url($current);
         $host = $current['host'];
