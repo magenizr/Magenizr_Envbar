@@ -1,5 +1,3 @@
----
-
 [![Latest Stable Version](https://poser.pugx.org/magenizr/magento2-envbar/v)](https://packagist.org/packages/magenizr/magento2-envbar) [![Total Downloads](https://poser.pugx.org/magenizr/magento2-envbar/downloads)](https://packagist.org/packages/magenizr/magento2-envbar) [![Latest Unstable Version](https://poser.pugx.org/magenizr/magento2-envbar/v/unstable)](https://packagist.org/packages/magenizr/magento2-envbar) [![License](https://poser.pugx.org/magenizr/magento2-envbar/license)](https://packagist.org/packages/magenizr/magento2-envbar) [![PHP Version Require](https://poser.pugx.org/magenizr/magento2-envbar/require/php)](https://packagist.org/packages/magenizr/magento2-envbar)
 
 # Envbar
